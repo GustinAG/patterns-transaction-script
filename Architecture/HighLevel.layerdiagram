@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="4ba42c54-2da5-4914-8bf9-7cc12dccd10e" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="31466b87-5b08-4c59-b949-7e46fe878aa1" name="Presentation Layer" requiredNamespace="TransactionScript.CheckOutGUI">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="a13ac52b-14ec-4036-87e9-9a592f726eed" direction="Forward">
+          <layerMoniker Id="20c7ea4c-4023-456f-85c6-056113805a18" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="9ee7ced3-ed12-46f4-9dfa-0c736506c103" direction="Forward">
+          <layerMoniker Id="0bcc4afd-61da-4aec-95fd-8b8fdc77e9c8" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="6efb8ac9-8b2a-450a-acb3-876bc09ed985" name="CheckOutGUI">
+          <references>
+            <reference Id="e8f3bf78-4303-4964-b5c8-9538e3cf72e5" name="CheckOutGUI">
+              <ArtifactNode Label="CheckOutGUI" Category="CodeSchema_Project" Id="(Assembly=../CheckOutGUI/CheckOutGUI.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=TransactionScript.CheckOutGUI)" Label="TransactionScript.CheckOutGUI.exe" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.exe" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="20c7ea4c-4023-456f-85c6-056113805a18" name="Business Layer" requiredNamespace="TransactionScript.BusinessLogic">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="7388d3bd-2a42-4ebc-a0d0-fb372ac13e0b" direction="Forward">
+          <layerMoniker Id="f4eb90f7-7eb1-49b8-b20e-234040b373d4" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="ced4965a-dc5b-4fcb-b258-63b3d8ad1a22" direction="Forward">
+          <layerMoniker Id="0bcc4afd-61da-4aec-95fd-8b8fdc77e9c8" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="9576ec16-59f3-498a-b557-127254942349" name="BusinessLogic">
+          <references>
+            <reference Id="1c219f97-60af-47a9-810d-be4333b2c95e" name="BusinessLogic">
+              <ArtifactNode Label="BusinessLogic" Category="CodeSchema_Project" Id="(Assembly=../BusinessLogic/BusinessLogic.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=TransactionScript.BusinessLogic)" Label="TransactionScript.BusinessLogic.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="f4eb90f7-7eb1-49b8-b20e-234040b373d4" name="Infrastructure Layer" requiredNamespace="TransactionScript.DataAccess">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="be6896cd-1c9b-42c4-8930-bdb4d880550c" direction="Forward">
+          <layerMoniker Id="0bcc4afd-61da-4aec-95fd-8b8fdc77e9c8" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="08ec717c-a940-40fa-8a89-8f0d8c8ed6d1" name="DataAccess">
+          <references>
+            <reference Id="767740fe-ede8-45c4-9e01-4a48d38d66b8" name="DataAccess">
+              <ArtifactNode Label="DataAccess" Category="CodeSchema_Project" Id="(Assembly=../DataAccess/DataAccess.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=TransactionScript.DataAccess)" Label="TransactionScript.DataAccess.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="0bcc4afd-61da-4aec-95fd-8b8fdc77e9c8" name="Data Transfer Objects" requiredNamespace="TransactionScript.DataTransferObjects">
+      <childLayers>
+        <layer Id="10e9b192-a5a5-4b73-8f3a-26283458c104" name="DataTransferObjects">
+          <references>
+            <reference Id="c875d4bb-636b-4a64-bf96-b7e3e300c721" name="DataTransferObjects">
+              <ArtifactNode Label="DataTransferObjects" Category="CodeSchema_Project" Id="(Assembly=../DataTransferObjects/DataTransferObjects.csproj)">
+                <Category Ref="File" />
+              </ArtifactNode>
+              <ExpandedNode Id="(Assembly=TransactionScript.DataTransferObjects)" Label="TransactionScript.DataTransferObjects.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>
