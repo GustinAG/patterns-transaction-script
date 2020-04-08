@@ -7,7 +7,7 @@ On the other hand, with the help of this sample code, you will ***not*** see the
 # What You Need For This
  + Visual Studio 2017 - *or higher* - incl.:
     + C# stuff
-    + .NET Framework 4.7
+    + .NET Framework 4.8
     + Markdown Editor
     + StyleCop
  + Also recommended:
