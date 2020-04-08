@@ -14,7 +14,6 @@ On the other hand, with the help of this sample code, you will ***not*** see the
     + ReSharper
     + TortoiseGit
     + Notepad++ including XML Tools
-    + VS extension: Target Framework Migrator
 
 # Architecture Patterns <br /> <small> *covered in this sample* </small>
  + **T**ransaction **S**cript

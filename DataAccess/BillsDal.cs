@@ -5,6 +5,6 @@ namespace TransactionScript.DataAccess
 {
     public static class BillsDal
     {
-        public static void SaveBill(BillDTO bill) => Console.WriteLine("Bill with {0} poducts saved.", bill.Products.Count);
+        public static void SaveBill(BillDTO bill) => Console.WriteLine($"Bill with {bill.Products.Count} products saved.");
     }
 }
